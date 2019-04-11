@@ -1,5 +1,8 @@
+import java.awt.Rectangle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.swing.JOptionPane;
 
 public class DemonRe {
 
@@ -34,8 +37,20 @@ public class DemonRe {
        String str1="caaammabbbbbssssdddd";
        String resultStr1=str1.replaceAll("(.)(\\1)*","$2");
        System.out.println("压缩后的字符为："+resultStr1);
-    
-	
+       //(4)
+       
+       //(5)
+       JOptionPane email = new JOptionPane();
+       email.setBounds(new Rectangle(104, 95, 233, 135));
+       String Email = email.showInputDialog("邮箱:");
+       Pattern e=Pattern.compile("(\\d{6,12}\\@)\\w{2}\\.\\w{3}");
+       String e1="(\\d{6,12}\\@)\\w{2}\\.\\w{3}";
+       Matcher m1=e.matcher(Email);
+       while(m1.find()) {
+    	   String temp=m1.group();
+    	   System.out.println("邮箱为："+temp);
+    	   System.out.println(Email.matches(e1));
+       }
 	}
 
 }
