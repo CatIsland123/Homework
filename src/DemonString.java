@@ -11,5 +11,7 @@ public class DemonString {
 		System.out.println("S的个数为："+n);
 		String newS=s.substring(10, 14);//空格也算一个
 		System.out.println("新的test为："+newS);
+		String[]str=s.split(" ");
+		System.out.println("数组为："+Arrays.toString(str ));
 }
 }
