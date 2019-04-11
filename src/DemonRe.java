@@ -1,4 +1,5 @@
 import java.awt.Rectangle;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,7 +39,7 @@ public class DemonRe {
        String resultStr1=str1.replaceAll("(.)(\\1)*","$2");
        System.out.println("压缩后的字符为："+resultStr1);
        //(4)
-       
+       /*
        //(5)
        JOptionPane email = new JOptionPane();
        email.setBounds(new Rectangle(104, 95, 233, 135));
@@ -51,6 +52,13 @@ public class DemonRe {
     	   System.out.println("邮箱为："+temp);
     	   System.out.println(Email.matches(e1));
        }
+       */
+       //(6)
+        
+       String abcStr = "12x34abc";
+       String reg="\\w+$";
+       System.out .println(abcStr.matches(reg));
 	}
+	
 
 }
