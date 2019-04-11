@@ -55,7 +55,7 @@ public class DemonRe {
        */
        //(6)
         
-       String abcStr = "12x34abc";
+       String abcStr = "1234abc";
        String reg="\\w+$";
        System.out .println(abcStr.matches(reg));
 	}
