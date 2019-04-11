@@ -35,6 +35,10 @@ public class DemonString {
 	       c.append(b1[i]);
 	    }
 	    System.out.print("第二种倒序为："+c);
+	    //(6)
+	    System.out.println();
+	    String [] d=s.split(" ");
+	    System.out.println("有意义的单词:"+Arrays.toString(d));
 		
 }
 }
