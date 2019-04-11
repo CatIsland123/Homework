@@ -40,5 +40,14 @@ public class DemonString {
 	    String [] d=s.split(" ");
 	    System.out.println("有意义的单词:"+Arrays.toString(d));
 		
+	    
+	    //2.
+	    String demonStr="I am a student";
+	    StringBuffer bufferStr=new StringBuffer(demonStr);
+	    System.out.println("添加为："+bufferStr.append("I am studing hard"));
+	    System.out.println("插入为："+bufferStr.insert(6, "good"));
+	    System.out.println("插入为："+bufferStr.insert(6, " "));
+	    System.out.println("删除为："+bufferStr.delete(0, 2));
+	    System.out.println("倒序为："+bufferStr.reverse());
 }
 }
