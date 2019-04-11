@@ -9,6 +9,7 @@ public class DemonString {
 		String  s="this is a test of java";
 		int n=s.split("s").length-1 ;
 		System.out.println("S的个数为："+n);
-	
+		String newS=s.substring(10, 14);//空格也算一个
+		System.out.println("新的test为："+newS);
 }
 }
