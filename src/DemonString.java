@@ -13,5 +13,14 @@ public class DemonString {
 		System.out.println("新的test为："+newS);
 		String[]str=s.split(" ");
 		System.out.println("数组为："+Arrays.toString(str ));
+		StringBuffer a=new StringBuffer(s);
+		Pattern p=Pattern.compile("[a-z]+\\s*");
+		Matcher m=p.matcher(a);
+		while (m.find()) {
+		String temp=m.group();
+		a.replace(m.start(0), m.start()+1, temp.substring(0,1).toUpperCase());
+		}
+	    System.out.println("首字母大写的新字符串："+a);
+		
 }
 }
