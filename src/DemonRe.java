@@ -52,12 +52,34 @@ public class DemonRe {
     	   System.out.println("邮箱为："+temp);
     	   System.out.println(Email.matches(e1));
        }
-       */
-       //(6)
+      
+       //(6) 有问题
         
        String abcStr = "1234abc";
-       String reg="\\w+$";
+       String reg="\\w{3}+$";
        System.out .println(abcStr.matches(reg));
+       //(9)
+       String Str="sjhpupel sdp pupel s";
+       Pattern p1 = Pattern.compile("\\{\\(pupel)\\}");
+       Matcher m2= p1.matcher(Str);
+       StringBuffer sb = new StringBuffer(Str);
+       while (m.find()) {
+           // 将匹配之前的字符串复制到sb,再将匹配结果替换为："0"，并追加到sb
+           m2.replaceAll("pipul");
+       }
+       m2.appendTail(sb);
+
+       String url=sb.toString();
+       System.out.println(url);
+        */
+       //(10)
+       String s="%...%CXLL=add1,31,123.12%CXLL=add2,32,124%CXLL=,33,125.12%LL=-121.11";
+       Pattern pa = Pattern.compile("%CXLL=.*?(?=%)");
+       Matcher ma= pa.matcher(s);
+       while(ma.find()) {
+        String tmp=ma.group();
+       System.out.println(tmp);
+       }
 	}
 	
 
