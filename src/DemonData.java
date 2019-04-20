@@ -59,9 +59,10 @@ public class DemonData {
      */
      //System.out.println(myDateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM,FormatStyle.MEDIUM )));
 	 
-	//修改日期 calendar.setTime(date); 
+	//修改日期 
 	 Date d=new Date();
 	 System.out.println("当前的时间为："+d);
+	 //calendar.setTime(date);
      Calendar c = Calendar.getInstance();
      c.add(Calendar.DAY_OF_MONTH , 1);
      Date n = c.getTime();
